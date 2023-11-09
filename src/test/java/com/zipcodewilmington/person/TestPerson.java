@@ -95,4 +95,74 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+    /*
+    ========================================================
+    ========================================================
+     */
+
+
+    @Test
+    public void testSetFavoriteColor() {
+        Person person = new Person();
+        String expected = "purple";
+
+        // When
+        person.setFavoriteColor(expected);
+
+        // Then
+        String actual = person.getFavoriteColor();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetWeight() {
+        Person person = new Person();
+        Integer expected = 5;
+
+        // When
+        person.setWeight(expected);
+
+        // Then
+        Integer actual = person.getWeight();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetFavoriteVideoGame() {
+        Person person = new Person();
+        String expected = "Stardew Valley";
+
+        // When
+        person.setFavoriteVideoGame(expected);
+
+        // Then
+        String actual = person.getFavoriteVideoGame();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetHeight() {
+        Person person = new Person();
+        Integer expected = 5;
+
+        // When
+        person.setHeight(expected);
+
+        // Then
+        Integer actual = person.getHeight();
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testSetEyeColor() {
+        Person person = new Person();
+        String expected = "purple";
+
+        // When
+        person.setEyeColor(expected);
+
+        // Then
+        String actual = person.getEyeColor();
+        Assert.assertEquals(expected, actual);
+    }
 }
